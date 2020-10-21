@@ -5,7 +5,7 @@
 void strupr(char *str)
 {
 	while(*str != 0) {
-		*str = toupper(*str);
+		*str = (*str >= 'a' && *str <= 'z') ? *str + ('A' - 'a') : *str;
 		str++;
 	}
 }
