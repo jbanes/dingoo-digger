@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Digger
+Comment=Run and collect
+Exec=digger
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=digger
+Categories=games;
+X-OD-Manual=digger.txt

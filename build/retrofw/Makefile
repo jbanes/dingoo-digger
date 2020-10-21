@@ -43,6 +43,8 @@ $(C_OBJS): $(OBJ_PATH)/%.o : $(SRC_PATH)/%.c
 
 $(BIN_TARGET): $(CXX_OBJS) $(C_OBJS)
 	$(C) $(CXX_OBJS) $(C_OBJS) $(LD_OPTS) -o $(BIN_TARGET)
+	rm -f digger.opk
+	mksquashfs ../dingux/default.gcw0.desktop default.retrofw.desktop $(BIN_TARGET) ../../screenshot/digger.png ../../digger.txt ../../digger.opk -all-root -no-xattrs -noappend -no-exports
 
 clean:
 	rm -rf $(OBJ_BASE)
