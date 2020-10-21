@@ -1,9 +1,9 @@
-                        Digger Remastered (Unix version)
-                        ================================
+Digger Remastered (Unix version)
+================================
 
-                                   13/3/2002
+13/3/2002
 
-                                by Andrew Jenner
+by Andrew Jenner
 
 This text file contains a subset of the information available on the official
 Digger Remastered website, which can be found at "http://www.digger.org". Also
