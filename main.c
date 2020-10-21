@@ -342,7 +342,7 @@ int mainprog(void)
     teststart();
     while (!started) {
       started=teststart();
-      if ((akeypressed==27 || akeypressed=='n' || akeypressed=='N') &&
+      if ((akeypressed==8 || akeypressed=='n' || akeypressed=='N') &&
           !gauntlet && diggers==1) {
         switchnplayers();
         shownplayers();

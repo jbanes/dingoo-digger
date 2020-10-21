@@ -207,7 +207,7 @@ int keycodes[17][5]={{SDLK_RIGHT,-2,-2,-2,-2},		/* 1 Right */
                      {SDLK_KP_MINUS,-2,-2,-2,-2},	/* Brake */
                      {SDLK_TAB,-2,-2,-2,-2},		/* Music */
                      {SDLK_BACKSPACE,-2,-2,-2,-2},		/* Sound */
-                     {SDLK_F10,-2,-2,-2,-2},		/* Exit */
+                     {SDLK_ESCAPE,-2,-2,-2,-2},		/* Exit */
                      {SDLK_RETURN,-2,-2,-2,-2}};		/* Pause */
 
 #define ASCIIF8 SDLK_F8
@@ -397,7 +397,7 @@ void checkkeyb(void)
     }
     if (akeypressed==ASCIIF8) /* Save DRF */
       savedrf=TRUE;
-    if (akeypressed!=27 && akeypressed!='n' && akeypressed!='N')
+    if (akeypressed!=8 && akeypressed!='n' && akeypressed!='N')
       start=TRUE;                                /* Change number of players */
   }
 }
